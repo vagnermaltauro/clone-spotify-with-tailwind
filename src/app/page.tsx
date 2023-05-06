@@ -1,20 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { Home as HomeIcon, Search, Library } from 'lucide-react';
 
-export default function Home () {
+export default function Home() {
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
         <aside className="w-72 bg-zinc-950 p-6">
-          <nav>
-            <a href="">
+          <nav className="space-y-4">
+            <a href="/" className="flex items-center gap-3 text-sm font-semibold text-zinc-200">
+              <HomeIcon />
               Home
             </a>
 
-            <a href="">
+            <a href="/" className="flex items-center gap-3 text-sm font-semibold text-zinc-200">
+              <Search />
               Search
             </a>
 
-            <a href="">
+            <a href="/" className="flex items-center gap-3 text-sm font-semibold text-zinc-200">
+              <Library />
               Your Library
             </a>
           </nav>
@@ -29,5 +33,5 @@ export default function Home () {
         footer
       </footer>
     </div>
-  )
+  );
 }

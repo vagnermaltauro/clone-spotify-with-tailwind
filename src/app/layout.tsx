@@ -1,13 +1,13 @@
-import React from 'react'
-import './globals.css'
+import React from 'react';
+import './globals.css';
 
 export const metadata = {
   title: 'Spotify',
-  description: 'apply tailwind'
-}
+  description: 'apply tailwind',
+};
 
-export default function RootLayout ({
-  children
+export default function RootLayout({
+  children,
 }: {
   children: React.ReactNode
 }) {
@@ -15,5 +15,5 @@ export default function RootLayout ({
     <html lang="en">
       <body className="bg-zinc-900 text-zinc-50">{children}</body>
     </html>
-  )
+  );
 }
