@@ -12,7 +12,7 @@ const albumImages = [
   },
   {
     src: '/images/album.jpeg',
-    title: 'Brain Food',
+    title: 'Food',
     id: 2,
   },
   {
@@ -22,17 +22,17 @@ const albumImages = [
   },
   {
     src: '/images/album.jpeg',
-    title: 'Example Brain',
+    title: 'Example1',
     id: 4,
   },
   {
     src: '/images/album.jpeg',
-    title: 'Album commit',
+    title: 'commit',
     id: 5,
   },
   {
     src: '/images/album.jpeg',
-    title: 'Brain Dev',
+    title: 'Brain',
     id: 6,
   },
 ];
