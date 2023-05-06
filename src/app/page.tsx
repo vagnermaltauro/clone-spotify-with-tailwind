@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import {
-  Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight,
+  Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play,
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -58,6 +58,9 @@ export default function Home() {
             <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/images/album-2.jpg" width={104} height={104} alt="Album image" />
               <strong>Example</strong>
+              <button className="p-2 rounded-full bg-green-400">
+                <Play />
+              </button>
             </a>
             <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
               <Image src="/images/album.jpeg" width={104} height={104} alt="Album image" />
