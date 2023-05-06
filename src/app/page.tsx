@@ -1,9 +1,21 @@
-/* eslint-disable react/button-has-type */
 import React from 'react';
 import {
-  Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play,
+  Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight,
 } from 'lucide-react';
-import Image from 'next/image';
+import AlbumButton from 'components/AlbumButton';
+
+const albumImages = [
+  {
+    src: '/images/album-2.jpg',
+    title: 'Example',
+    id: 1,
+  },
+  {
+    src: '/images/album.jpeg',
+    title: 'Brain Food',
+    id: 2,
+  },
+];
 
 export default function Home() {
   return (
@@ -55,33 +67,12 @@ export default function Home() {
           <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
 
           <div className="grid grid-cols-3 gap-4 mt-4">
-            <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
-              <Image src="/images/album-2.jpg" width={104} height={104} alt="Album image" />
-              <strong>Example</strong>
-              <button className="p-2 rounded-full bg-green-400">
-                <Play />
-              </button>
-            </a>
-            <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
-              <Image src="/images/album.jpeg" width={104} height={104} alt="Album image" />
-              <strong>Brain Food</strong>
-            </a>
-            <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
-              <Image src="/images/album-2.jpg" width={104} height={104} alt="Album image" />
-              <strong>Example</strong>
-            </a>
-            <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
-              <Image src="/images/album.jpeg" width={104} height={104} alt="Album image" />
-              <strong>Brain Food</strong>
-            </a>
-            <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
-              <Image src="/images/album-2.jpg" width={104} height={104} alt="Album image" />
-              <strong>Example</strong>
-            </a>
-            <a href="/" className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors">
-              <Image src="/images/album.jpeg" width={104} height={104} alt="Album image" />
-              <strong>Brain Food</strong>
-            </a>
+            {albumImages.map((index) => (
+              <AlbumButton
+                imageSrc={index.src}
+                titleAlbum={index.title}
+              />
+            ))}
           </div>
         </main>
       </div>
