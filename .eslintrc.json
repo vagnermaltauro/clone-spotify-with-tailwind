@@ -20,13 +20,20 @@
         "@typescript-eslint"
     ],
     "rules": {
-      "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }]
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+      "react/button-has-type": "off"
     },
-      "settings": {
-        "import/resolver": {
-          "node": {
-            "extensions": [".js", ".jsx", ".ts", ".tsx"]
-          }
+    "settings": {
+      "import/resolver": {
+        "typescript": {
+          "directory": "./tsconfig.json"
         }
       }
+    },
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never"
+    }]
 }
