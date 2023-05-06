@@ -1,5 +1,8 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
-import { Home as HomeIcon, Search, Library } from 'lucide-react';
+import {
+  Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight,
+} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -38,7 +41,26 @@ export default function Home() {
         </aside>
 
         <main className="flex-1 p-6">
-          main
+          <div className="flex items-center gap-3">
+            <button className="rounded-full bg-black/40 p-1">
+              <ChevronLeft />
+            </button>
+
+            <button className="rounded-full bg-black/40 p-1">
+              <ChevronRight />
+            </button>
+          </div>
+
+          <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
+
+          <div className="grid grid-cols-3 gap-4">
+            <div className="bg-white/10 rounded">Playlist</div>
+            <div className="bg-white/10 rounded">Playlist</div>
+            <div className="bg-white/10 rounded">Playlist</div>
+            <div className="bg-white/10 rounded">Playlist</div>
+            <div className="bg-white/10 rounded">Playlist</div>
+            <div className="bg-white/10 rounded">Playlist</div>
+          </div>
         </main>
       </div>
 
