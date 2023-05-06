@@ -1,12 +1,13 @@
+import React from 'react'
 import './globals.css'
 
 export const metadata = {
   title: 'Spotify',
-  description: 'apply tailwind',
+  description: 'apply tailwind'
 }
 
-export default function RootLayout({
-  children,
+export default function RootLayout ({
+  children
 }: {
   children: React.ReactNode
 }) {
