@@ -15,6 +15,26 @@ const albumImages = [
     title: 'Brain Food',
     id: 2,
   },
+  {
+    src: '/images/album.jpeg',
+    title: 'Tailwind',
+    id: 3,
+  },
+  {
+    src: '/images/album.jpeg',
+    title: 'Example Brain',
+    id: 4,
+  },
+  {
+    src: '/images/album.jpeg',
+    title: 'Album commit',
+    id: 5,
+  },
+  {
+    src: '/images/album.jpeg',
+    title: 'Brain Dev',
+    id: 6,
+  },
 ];
 
 export default function Home() {
@@ -69,6 +89,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4 mt-4">
             {albumImages.map((index) => (
               <AlbumButton
+                key={index.id}
                 imageSrc={index.src}
                 titleAlbum={index.title}
               />
