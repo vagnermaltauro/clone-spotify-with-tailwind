@@ -3,6 +3,7 @@ import {
   Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight,
 } from 'lucide-react';
 import AlbumButton from 'components/AlbumButton';
+import MadeForUser from 'components/MadeForUser';
 
 const albumImages = [
   {
@@ -95,6 +96,8 @@ export default function Home() {
               />
             ))}
           </div>
+
+          <MadeForUser />
         </main>
       </div>
 
