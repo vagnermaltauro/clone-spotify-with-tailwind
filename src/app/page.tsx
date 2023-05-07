@@ -2,7 +2,7 @@ import React from 'react';
 import AlbumButton from 'components/AlbumButton';
 import MadeForUser from 'components/MadeForUser';
 import Footer from 'components/Footer';
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Sidebar from 'components/Sidebar';
 
 const albumImages = [
